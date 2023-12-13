@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\RECHAO\Fintech\imagens\apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\RECHAO\Fintech\imagens\favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\RECHAO\Fintech\imagens\favicon-16x16.png">
-  <link rel="manifest" href="C:\Users\RECHAO\Fintech\site.webmanifest">
 </head>
+
 <body>
-  <img src="C:\Users\RECHAO\Fintech\imagens\investemaislogo.png" alt="Logo" class="logo">
-  <div class="container">
-    <div class="login-box">
-      <h2>Login</h2>
-      <form action="#">
-        <div class="input-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="text-center mb-4">
+          <img src="C:\Users\RECHAO\Fintech\imagens\investemaislogo.png" alt="Logo" class="img-fluid rounded-circle"
+            style="width: 300px;">
         </div>
-        <div class="input-group">
-          <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" required>
-          <a href="#" class="forgot-password">Esqueci a senha</a>
-        </div>
-        <button type="submit" class="btn-login">Entrar</button>
-        <p class="create-account">Não tem conta? <a href="#" class="signup-link">Inscreva-se</a></p>
-      </form>
-      <div class="alternative-login">
-        <p>Ou faça login com:</p>
-        <div class="social-login">
-          <a href="#" class="btn-facebook">Facebook</a>
-          <a href="#" class="btn-gmail">Gmail</a>
-          <a href="#" class="btn-linkedin">LinkedIn</a>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">Login</h2>
+            <form action="#">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <a href="#" class="forgot-password">Esqueci a senha</a>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Entrar</button>
+              <p class="text-center mt-3">Não tem conta? <a href="#" class="signup-link">Inscreva-se</a></p>
+            </form>
+            <div class="text-center">
+              <p class="mb-2">Ou faça login com:</p>
+              <div class="social-login">
+                <a href="#" class="btn btn-primary">Facebook</a>
+                <a href="#" class="btn btn-danger">Gmail</a>
+                <a href="#" class="btn btn-primary">LinkedIn</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
